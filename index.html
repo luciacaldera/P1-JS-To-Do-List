@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="new-task-container">
+        <form class="new-task-form">
+          <label for="task-input" class="task-input-label">New Task</label>
+          <input type="text" class="task-input" name="task" required />
+          <button type="submit" class="add-btn">Add Task</button>
+        </form>
+      </div>
+      <div class="tasks-container">
+        <ul class="task-list"></ul>
+        <button type="button" id="delete-completed-btn">
+          Delete all completed tasks
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

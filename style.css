@@ -1,0 +1,147 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: #376b83;
+}
+
+main {
+  background: #eeeeee;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  width: 50rem;
+  margin: 5rem auto;
+  padding: 5rem 0;
+  font-family: 'Poppins', sans-serif;
+  color: #555555;
+}
+
+.new-task-container {
+  text-align: center;
+}
+
+.task-input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.task-input {
+  margin: 1rem;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 60%;
+  outline: none;
+  border: 2px solid #dddddd;
+}
+
+.task-input:focus {
+  border: 2px solid #376b83;
+}
+
+.add-btn {
+  border-radius: 5px;
+  padding: 0.7rem 1.2rem;
+  width: 20%;
+  background: #376b83;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #eeeeee;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tasks-container {
+  position: relative;
+  background: #376b83;
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+}
+
+.task-list {
+  list-style: none;
+  color: #ffffff;
+  margin: 1rem 1rem;
+  font-size: 1.2rem;
+}
+
+.task-list li:not(:first-of-type) {
+  margin-top: 1.5rem;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.completed {
+  color: black;
+  text-decoration: line-through;
+}
+
+.task-item.completed {
+  cursor: default;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.15rem 0.3rem;
+  background: #ffffff;
+  color: #555555;
+}
+
+.edit-input {
+  margin-left: 0.1rem;
+  width: 35%;
+}
+
+.edit-btn {
+  margin-left: 0.2rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.15rem 0.3rem;
+  background: #ffffff;
+  color: #555555;
+}
+
+#delete-completed-btn {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.15rem 0.3rem;
+  background: #ffffff;
+  color: #555555;
+  width: 15rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
